@@ -66,16 +66,16 @@ wikiargument.raiseNotice("<? echo $notice; ?>");
     <div id = "footer_content">
         <a href = '<? echo $sTemplate->getRoot(); ?>'><div id = "footer_logo"></div></a>
         <div id = "footer_copyright">
-          <? echo $sTemplate->getString("FOOTER_COPYRIGHT"); ?> |
+          <? echo $sTemplate->getString("FOOTER_COPYRIGHT"); ?>|
+          <a href = '<? echo $sTemplate->getRoot(); ?>i/faq/'><? echo $sTemplate->getString("FOOTER_FAQ"); ?></a> |
           <a href = '#' onclick = "$('#footer_menu').show(); return false;"><? echo $sTemplate->getString("FOOTER_MENU"); ?></a> |
           <a href="http://de.wikiarguments.net">Powered by Wikiarguments </a> |
-          <a href="http://de.template.piratearguments.de">Template: Piratearguments </a>
         </div>
         <div id = "footer_menu" style = "display: none;">
-          <a href = '<? echo $sTemplate->getRoot(); ?>i/faq/'><? echo $sTemplate->getString("FOOTER_FAQ"); ?></a> |
           <? echo $sTemplate->getString("FOOTER_OPEN_SOURCE"); ?> |
           <? echo $sTemplate->getString("CHANGELOG_URL"); ?><? echo $sTemplate->getString("FOOTER_CHANGELOG"); ?></a> |
-          <a href = '<? echo $sTemplate->getRoot(); ?>i/new-group/'><? echo $sTemplate->getString("FOOTER_NEW_GROUP"); ?></a> |
+          <? /* <a href = '<? echo $sTemplate->getRoot(); ?>i/new-group/'><? echo $sTemplate->getString("FOOTER_NEW_GROUP"); ?></a> | */ ?>
+          <a href="http://de.template.piratearguments.de">Template: Piratearguments </a> |
           <? echo $sTemplate->getString("FOOTER_TOS"); ?>
         </div>
         <div id="footer_socials">

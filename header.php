@@ -186,13 +186,13 @@ var wikiargument = new _Wikiargument('');
 
           <div class = "hidden profile_menu">
             <ul class="user_profile_list">
-                <li><div class = "icon_new_question"></div><a href = '<? echo $sTemplate->getRoot(); ?>i/new-question/'><? echo $sTemplate->getString("HEADER_NAVI_NEW_QUESTION"); ?></a></li>
+               <? /* <li><div class = "icon_new_question"></div><a href = '<? echo $sTemplate->getRoot(); ?>i/new-question/'><? echo $sTemplate->getString("HEADER_NAVI_NEW_QUESTION"); ?></a></li> */ ?>
                 <li><div class = "icon_share_page"></div><a href = '#' onclick = "wikiargument.sharePage('<? echo $sPage->shortUrl() ? $sPage->shortUrl() : ''; ?>');"><? echo $sTemplate->getString("HEADER_NAVI_SHARE_PAGE"); ?></a></li>
                 <li><div class = "icon_manage_profile"></div><a href = '<? echo $sTemplate->getRoot(); ?>i/manage-profile/'><? echo $sTemplate->getString("HEADER_NAVI_MANAGE_PROFILE"); ?></a></li>
                 <li><div class = "icon_my_profile"></div><a href = '<? echo $sTemplate->getRoot(); ?>i/user/<? echo $sUser->getUserId(); ?>/'><? echo $sTemplate->getString("HEADER_NAVI_MY_PROFILE"); ?></a></li>
                 <li><div class = "icon_logout"></div><a href = '<? echo $sTemplate->getRoot(); ?>i/logout/'><? echo $sTemplate->getString("HEADER_NAVI_LOGOUT"); ?></a></li>
 <? foreach($sUser->adminGroups() as $k => $g) { ?>
-                <li class = "user_profile_list_manage_group"><div class = "icon_new_group"></div><a href = '<? echo $sTemplate->getRoot(); ?>groups/<? echo $g->url(); ?>/manage-group/'><? echo htmlspecialchars($g->title()); ?></a></li>
+               <? /* <li class = "user_profile_list_manage_group"><div class = "icon_new_group"></div><a href = '<? echo $sTemplate->getRoot(); ?>groups/<? echo $g->url(); ?>/manage-group/'><? echo htmlspecialchars($g->title()); ?></a></li> */ ?>
 <? } ?>
             </ul>
           </div>

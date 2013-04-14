@@ -45,8 +45,7 @@ $language   = $sTemplate->getLangBase();
   <div class = "clean_box_1050">
     <div class = "row">
       <div class = "headline" style = "width: 300px; float:left;"><? echo $sTemplate->getString("SIGNUP_HEADLINE"); ?></div>
-      <div class = "headline headline_gray" style = "width: 425px; float:left; text-align: center;"><? echo $sTemplate->getString("LOGIN_OR"); ?></div>
-      <div class = "headline" style = "width: 250px; float:left; text-align: right;"><? echo $sTemplate->getString("LOGIN_HEADLINE"); ?></div>
+      <div class = "headline" style = "width: 650px; float:left; text-align: right;"><? echo $sTemplate->getString("LOGIN_HEADLINE"); ?></div>
       <div class = "clear"></div>
     </div>
   </div>
